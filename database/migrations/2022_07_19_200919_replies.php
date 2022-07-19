@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class References extends Migration
+class Replies extends Migration
 {
     /**
      * Run the migrations.
@@ -14,13 +14,15 @@ class References extends Migration
     public function up()
     {
         //
-        Schema::create('references', function (Blueprint $table) {
+        Schema::create('replies', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('user_name')->unsigned();
-            $table->foreign('user_name')->references('name')->on('customers');
+            $table->bigInteger('customer_id')->nullable()->unsigned();
+            $table->foreign('customer_id')->references('id')->on('customers');
+            $table->integer('reference_id')->nullable()->unsigned();
+            $table->foreign('reference_id')->references('id')->on('references');
+            $table->string('user_name');
             $table->string('title');
             $table->string('body');
-            $table->string('tag');
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
         });
@@ -34,6 +36,6 @@ class References extends Migration
     public function down()
     {
         //
-        Schema::drop('references');
+        Schema::drop('replies');
     }
 }
