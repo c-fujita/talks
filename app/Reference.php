@@ -7,4 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class reference extends Model
 {
     //
+    protected $fillable = [
+        'user_name', 'title','body','tag',
+    ];
+
+    protected $table = 'References';
 }
