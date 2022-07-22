@@ -1,0 +1,499 @@
+@charset "UTF-8";
+
+html {
+  font-size: 16px;
+}
+
+
+#wrap {
+  font-size: 1rem;
+  background: #f7f0f4;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+/* ヘッダー */
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 8rem;
+  background-color: #f9f9f9;
+  max-height: 9.3rem;
+  height: 100vh;
+  z-index: 9999;
+}
+
+.btn-info {
+  color: #212529;
+  background-color: lightgrey;
+  border-color: #6cb2eb;
+}
+
+
+#header-wrap {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-searchArea {
+  text-align: center;
+  padding: .3rem 0;
+  margin: 0 5rem 0 0;
+}
+
+.header-searchArea h1 {
+  font-size: 5rem;
+}
+
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.input-lg {
+  width: 30rem;
+  margin: 0 .3rem 0 0;
+}
+
+
+.logo-imgSize {
+  width: 20%;
+}
+
+.logo-imgSize img {
+  width: 70%;
+}
+
+.menu-imgSize {
+  width: 10%;
+  padding: 5px 0;
+}
+
+.menu-imgSize img {
+  width: 90%;
+}
+
+#header-list a {
+  font-size: 1.3vw;
+}
+
+.g-navi {
+  display: none;
+}
+
+.g-navi .active {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  border: 1px solid;
+}
+
+
+
+
+/* 検索エリア */
+
+#search-wrap {
+  margin-bottom: 3rem;
+}
+
+.search-imageBox {
+  position: relative;
+}
+
+.image-area {
+  display: flex;
+  justify-content: space-around;
+  padding: 12rem 0 0 0;
+  margin: 0 auto;
+}
+
+.image-size {
+  width: 12%;
+  position: relative;
+}
+
+#speech-balloon {
+  position: relative;
+}
+
+.image-size2 img {
+  position: absolute;
+  top: -20%;
+  left: 80%;
+  width: 80%;
+}
+
+.search-font {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.font-point1 {
+  position: absolute;
+  top: -12%;
+  left: 80%;
+  width: 80%;
+}
+
+.font-point2 {
+  position: absolute;
+  top: -11%;
+  left: 80%;
+  width: 80%;
+}
+
+.font-point3 {
+  position: absolute;
+  top: 0%;
+  left: 80%;
+  width: 80%;
+}
+
+/* #search-area.search-box {
+  width: 20%;
+} */
+
+#search-area {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+#search-area .input-lg {
+  width: 12rem;
+}
+
+#search-area .col-md-12 {
+  flex: 0;
+
+}
+
+#search-area .btn {
+  width: 5rem;
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+}
+
+
+/* 投稿内容一覧 */
+
+#main-wrap {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 4.3rem;
+}
+
+#main-content,
+#side-wrap {
+  overflow-wrap: break-word;
+}
+
+main {
+  width: 70%;
+}
+
+aside {
+  width: 20%;
+  text-align: center;
+}
+
+/*===================================*/
+/*メインエリア*/
+/*===================================*/
+
+.content-area {
+  margin: 1em 0;
+  padding: 1em;
+  box-shadow: 0 0 3px 3px #b2ff59, 0 0 3px 2px #b2ff59 inset;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.title-nameBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title-nameBox h3 {
+  font-size: 1.5rem;
+}
+
+.tag-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 0 1rem 0;
+}
+
+.tag-image {
+  width: 40%;
+  display: flex;
+}
+
+.tag-imageSize {
+  width: 5%;
+}
+
+/*===================================*/
+/*サイドエリア*/
+/*===================================*/
+
+
+/*アイコン（マイページ、カート）を横並び*/
+.sub_icon {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 1.5vw 0;
+  /*下に余白*/
+}
+
+/*アイコンの文字場所指定*/
+.sub_icon li {
+  width: 48%;
+  /*アイコンリストの横幅指定*/
+  text-align: center;
+  text-transform: uppercase;
+  /*太文字*/
+  font-size: 1.1vw;
+}
+
+/*アイコン画像サイズ*/
+.sub_icon li img {
+  width: 70%;
+}
+
+
+
+/*文字と背景の形指定*/
+.sub_icon li a {
+  display: block;
+  border-radius: 1vw;
+  padding: 1rem .5rem
+}
+
+/*アイコン（マイページ）背景の色指定*/
+.sub_icon li:first-child a {
+  background-color: #f9f9f9;
+}
+
+/*アイコン（カート）背景の色指定*/
+.sub_icon li:last-child a {
+  background-color: #f9f9f9;
+}
+
+/*=================================*/
+/*カーソルを合わせると出現（四角）*/
+
+/*縮む四角　基準を設定*/
+.push_sub_icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*疑似要素（最後）縮む線の形*/
+.push_sub_icon:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  border-radius: 1vw;
+  transform: translate(-50%, -50%) scale(1.1);
+  /*縮む設定*/
+  transition: 0.3s ease;
+  /*縮むスピード*/
+}
+
+/*疑似要素（最後）マイページ側　線の色指定*/
+.sub_icon li:first-child a.push_sub_icon:after {
+  border: 1px solid #c184ff
+}
+
+/*疑似要素（最後）カート側　線の色指定*/
+.sub_icon li:last-child a.push_sub_icon:after {
+  border: 1px solid #c184ff;
+}
+
+/*マウスオーバーをしたら線が小さくなる*/
+.sub_icon li:first-child a.push_sub_icon:hover:after,
+.sub_icon li:last-child a.push_sub_icon:hover:after {
+  transform: translate(-50%, -50%) scale(1);
+  /*縮む設定*/
+  border-color: #ff8484
+    /*線の色を変更*/
+}
+
+
+/*===================================*/
+/*ランキング*/
+/*===================================*/
+
+#ranking {
+  margin: 1em 0;
+  padding: 1em;
+  background-size: 20px 20px;
+  border-radius: 5px;
+  background-color: #f9ffff;
+  background-image: linear-gradient(45deg, rgba(255, 186, 238, .1) 25%, transparent 25%, transparent 50%, rgba(255, 186, 238, .1) 50%, rgba(255, 186, 238, .1) 75%, transparent 75%, transparent), linear-gradient(-45deg, rgba(255, 186, 238, .1) 25%, transparent 25%, transparent 50%, rgba(255, 186, 238, .1) 50%, rgba(255, 186, 238, .1) 75%, transparent 75%, transparent);
+  border: solid 2px #f48fb1;
+}
+
+/*ランキングリストの配置*/
+.ranking_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  counter-reset: number;
+  /*カウンターリセットをする*/
+  /*擬似要素でcontentを使用するため必要*/
+}
+
+/*ランキング h2タグ*/
+#ranking h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+/*ランキング　aタグ設定*/
+#ranking a {
+  text-decoration: none;
+  color: #3b2f19;
+  font-weight: 700;
+  /* 太文字に */
+}
+
+/*擬似要素を動かす基準を設定+リスト全体の横幅指定*/
+.ranking_list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+/*擬似要素追加（最初）ランキングリストの番号設定*/
+.ranking_list li::before {
+  /* position: absolute;
+  top: -30%;
+  left: -80%; */
+  z-index: 2;
+  content: counter(number);
+  /*番号を表示（これだけでは０のみ）*/
+  counter-increment: number;
+  /*番号を増加（１〜順に表示）*/
+  background-color: #457703;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  line-height: 3vw;
+  /*番号の高さ指定*/
+  font-size: 1.2vw;
+  text-align: center;
+  color: #fff;
+}
+
+/*　番号1~3　の背面の色変更*/
+.ranking_list li:nth-child(1)::before {
+  background-color: #997f42;
+}
+
+.ranking_list li:nth-child(2)::before {
+  background-color: #777;
+}
+
+.ranking_list li:nth-child(3)::before {
+  background-color: #b25938;
+}
+
+/*===================================*/
+/*　ランキング画像　　１〜３位は光る（キラッ）*/
+
+/*　光り（キラッ）の基準を指定*/
+.shine {
+  position: relative;
+  overflow-wrap: break-word;
+}
+
+/*　擬似要素（最初）を設定*/
+.shine::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  left: -75%;
+  /*画面外　左から右へ（スタート）*/
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 100%);
+  transform: skewX(-30deg);
+  /*背景を斜めに*/
+}
+
+/*名前と表示スピード設定*/
+.shine:hover::before {
+  /*hoverした時の変化*/
+  animation: shine 1s;
+}
+
+/*画面外　左から右へ（ゴール）*/
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+/*ランキングの画像サイズ設定*/
+.ranking_img_size {
+  background-size: cover;
+  width: 100%;
+  height: 15vw;
+}
+
+
+/*===================================*/
+/*フッター*/
+/*===================================*/
+
+footer {
+  text-align: center;
+  padding: 0 8rem;
+  background-color: #f9f9f9;
+
+}
+
+#footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 9.3rem;
+  height: 100vh;
+}
