@@ -39,6 +39,7 @@
                 <div class="header-searchArea">
                     <h1>talks</h1>
                     <div class="input-group col-md-12 search-box">
+                        {{-- 全体あいまい検索 --}}
                         <form action="" method="post">
                             <div class="search-box">
                                 <input type="text" class="form-control input-lg" name="search"
@@ -109,9 +110,10 @@
                 <div id="search-area">
 
                     <div class="input-group col-md-12 search-box">
+                        {{-- コース検索 --}}
                         <form action="" method="post">
                             <div class="search-box">
-                                <input type="text" class="form-control input-lg" name="search"
+                                <input type="text" class="form-control input-lg" name="courseSearch"
                                     placeholder="キーワード" />
                                 <span class="input-group-btn">
                                     <button class="btn btn-info btn-lg" type="submit">
@@ -123,9 +125,10 @@
                     </div>
 
                     <div class="input-group col-md-12 search-box">
+                        {{-- レッスン検索 --}}
                         <form action="" method="post">
                             <div class="search-box">
-                                <input type="text" class="form-control input-lg" name="search"
+                                <input type="text" class="form-control input-lg" name="lessonSearch"
                                     placeholder="キーワード" />
                                 <span class="input-group-btn">
                                     <button class="btn btn-info btn-lg" type="submit">
@@ -137,9 +140,10 @@
                     </div>
 
                     <div class="input-group col-md-12 search-box">
+                        {{-- タグ検索 --}}
                         <form action="" method="post">
                             <div class="search-box">
-                                <input type="text" class="form-control input-lg" name="search"
+                                <input type="text" class="form-control input-lg" name="tagSearch"
                                     placeholder="キーワード" />
                                 <span class="input-group-btn">
                                     <button class="btn btn-info btn-lg" type="submit">
@@ -366,7 +370,7 @@
                                         alt=""><br>新規投稿</a>
                             </li>
                             <li class="emerge_cap" data-tippy-content="">
-                                <a href="/my-page" class="push_sub_icon"><img
+                                <a href={{ route('myPage' )}} class="push_sub_icon"><img
                                         src="{{ asset('image/となりのケンちゃん.png') }}" alt="">
                                     <br>マイページ
                                 </a>

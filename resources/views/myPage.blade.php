@@ -196,7 +196,7 @@
                         </a>
                     </div>
                     {{-- ↑ここまで↑ --}}
-                    {{-- 以下コピペ --}}
+
 
 
                 </section>
@@ -211,7 +211,7 @@
                                         alt=""><br>新規投稿</a>
                             </li>
                             <li class="emerge_cap" data-tippy-content="">
-                                <a href="/index" class="push_sub_icon"><img src="{{ asset('image/ホーム画面アイコン.png') }}"
+                                <a href={{ route('index' )}} class="push_sub_icon"><img src="{{ asset('image/ホーム画面アイコン.png') }}"
                                     alt="">
                                     <br>ホーム画面へ
                                 </a>
