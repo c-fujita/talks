@@ -36,4 +36,9 @@ class Customer extends Authenticatable  // ←←←← 注目
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function Reference()
+    {
+        return $this->hasMany('App\Reference');
+    }
 }

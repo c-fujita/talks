@@ -12,4 +12,9 @@ class reference extends Model
     ];
 
     protected $table = 'References';
+
+    public function customer()
+    {
+        return $this->belongsTo('App\Customer');
+    }
 }
