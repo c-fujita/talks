@@ -68,7 +68,7 @@
                     <ul>
                         <li><a href="">新規投稿</a></li>
                         <li><a href="">うぇぶくり</a></li>
-                        <li><a href="">マイページ</a></li>
+                        <li><a href="">ホーム画面</a></li>
                         <li><a href="">お問いわせ</a></li>
                         <li><a href="">ログアウト</a></li>
                     </ul>
@@ -211,7 +211,7 @@
                                         alt=""><br>新規投稿</a>
                             </li>
                             <li class="emerge_cap" data-tippy-content="">
-                                <a href={{ route('index' )}} class="push_sub_icon"><img src="{{ asset('image/ホーム画面アイコン.png') }}"
+                                <a href={{ route( 'index' )}} class="push_sub_icon"><img src="{{ asset('image/ホーム画面アイコン.png') }}"
                                     alt="">
                                     <br>ホーム画面へ
                                 </a>

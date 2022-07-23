@@ -40,7 +40,7 @@
                     <h1>talks</h1>
                     <div class="input-group col-md-12 search-box">
                         {{-- 全体あいまい検索 --}}
-                        <form action="" method="post">
+                        <form method="post">
                             <div class="search-box">
                                 <input type="text" class="form-control input-lg" name="search"
                                     placeholder="キーワード" />
@@ -111,7 +111,7 @@
 
                     <div class="input-group col-md-12 search-box">
                         {{-- コース検索 --}}
-                        <form action="" method="post">
+                        <form method="post">
                             <div class="search-box">
                                 <input type="text" class="form-control input-lg" name="courseSearch"
                                     placeholder="キーワード" />
@@ -126,7 +126,7 @@
 
                     <div class="input-group col-md-12 search-box">
                         {{-- レッスン検索 --}}
-                        <form action="" method="post">
+                        <form method="post">
                             <div class="search-box">
                                 <input type="text" class="form-control input-lg" name="lessonSearch"
                                     placeholder="キーワード" />
@@ -141,7 +141,7 @@
 
                     <div class="input-group col-md-12 search-box">
                         {{-- タグ検索 --}}
-                        <form action="" method="post">
+                        <form method="post">
                             <div class="search-box">
                                 <input type="text" class="form-control input-lg" name="tagSearch"
                                     placeholder="キーワード" />
