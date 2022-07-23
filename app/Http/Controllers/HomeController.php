@@ -25,4 +25,10 @@ class HomeController extends Controller
     {
         return view('index');
     }
+
+    // マイページへ
+    public function myPage()
+    {
+        return view('myPage');
+    }
 }

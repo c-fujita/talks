@@ -198,162 +198,7 @@
                     {{-- ↑ここまで↑ --}}
                     {{-- 以下コピペ --}}
 
-                    {{-- 投稿内容　２つ目 --}}
-                    <div class="content-area">
-                        <a href="">
-                            <div class="title-nameBox">
-                                <h3 class="title">ここにタイトルが入ります。</h3>
-                                <div class="name-area">
-                                    <p>猫の助け</p>
-                                    <p>2022/07/20</p>
-                                </div>
-                            </div>
 
-                            <div class="tag-area">
-                                <h5>タグ</h5>
-                                <div class="tag-image">
-                                    <div class="tag-imageSize">
-                                        <img src="{{ asset('image/タグ.png') }}" alt="">
-                                    </div>
-                                    <div class="tag-font">
-                                        <p>タグ1</p>
-                                    </div>
-
-                                    <div class="tag-imageSize">
-                                        <img src="{{ asset('image/タグ.png') }}" alt="">
-                                    </div>
-                                    <div class="tag-font">
-                                        <p>タグ2</p>
-                                    </div>
-
-                                    <div class="tag-imageSize">
-                                        <img src="{{ asset('image/タグ.png') }}" alt="">
-                                    </div>
-                                    <div class="tag-font">
-                                        <p>タグ3</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    {{-- 投稿内容　３つ目 --}}
-                    <div class="content-area">
-                        <a href="">
-                            <div class="title-nameBox">
-                                <h3 class="title">ここにタイトルが入ります。</h3>
-                                <div class="name-area">
-                                    <p>猫の助け</p>
-                                    <p>2022/07/20</p>
-                                </div>
-                            </div>
-
-                            <div class="tag-area">
-                                <h5>タグ</h5>
-                                <div class="tag-image">
-                                    <div class="tag-imageSize">
-                                        <img src="{{ asset('image/タグ.png') }}" alt="">
-                                    </div>
-                                    <div class="tag-font">
-                                        <p>タグ1</p>
-                                    </div>
-
-                                    <div class="tag-imageSize">
-                                        <img src="{{ asset('image/タグ.png') }}" alt="">
-                                    </div>
-                                    <div class="tag-font">
-                                        <p>タグ2</p>
-                                    </div>
-
-                                    <div class="tag-imageSize">
-                                        <img src="{{ asset('image/タグ.png') }}" alt="">
-                                    </div>
-                                    <div class="tag-font">
-                                        <p>タグ3</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    {{-- 投稿内容　４つ目 --}}
-                    <div class="content-area">
-                        <a href="">
-                            <div class="title-nameBox">
-                                <h3 class="title">ここにタイトルが入ります。</h3>
-                                <div class="name-area">
-                                    <p>猫の助け</p>
-                                    <p>2022/07/20</p>
-                                </div>
-                            </div>
-
-                            <div class="tag-area">
-                                <h5>タグ</h5>
-                                <div class="tag-image">
-                                    <div class="tag-imageSize">
-                                        <img src="{{ asset('image/タグ.png') }}" alt="">
-                                    </div>
-                                    <div class="tag-font">
-                                        <p>タグ1</p>
-                                    </div>
-
-                                    <div class="tag-imageSize">
-                                        <img src="{{ asset('image/タグ.png') }}" alt="">
-                                    </div>
-                                    <div class="tag-font">
-                                        <p>タグ2</p>
-                                    </div>
-
-                                    <div class="tag-imageSize">
-                                        <img src="{{ asset('image/タグ.png') }}" alt="">
-                                    </div>
-                                    <div class="tag-font">
-                                        <p>タグ3</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-
-                    {{-- 投稿内容　５つ目 --}}
-                    <div class="content-area">
-                        <a href="">
-                            <div class="title-nameBox">
-                                <h3 class="title">ここにタイトルが入ります。</h3>
-                                <div class="name-area">
-                                    <p>猫の助け</p>
-                                    <p>2022/07/20</p>
-                                </div>
-                            </div>
-
-                            <div class="tag-area">
-                                <h5>タグ</h5>
-                                <div class="tag-image">
-                                    <div class="tag-imageSize">
-                                        <img src="{{ asset('image/タグ.png') }}" alt="">
-                                    </div>
-                                    <div class="tag-font">
-                                        <p>タグ1</p>
-                                    </div>
-
-                                    <div class="tag-imageSize">
-                                        <img src="{{ asset('image/タグ.png') }}" alt="">
-                                    </div>
-                                    <div class="tag-font">
-                                        <p>タグ2</p>
-                                    </div>
-
-                                    <div class="tag-imageSize">
-                                        <img src="{{ asset('image/タグ.png') }}" alt="">
-                                    </div>
-                                    <div class="tag-font">
-                                        <p>タグ3</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
                 </section>
             </main>
 
@@ -366,9 +211,9 @@
                                         alt=""><br>新規投稿</a>
                             </li>
                             <li class="emerge_cap" data-tippy-content="">
-                                <a href="/my-page" class="push_sub_icon"><img
-                                        src="{{ asset('image/となりのケンちゃん.png') }}" alt="">
-                                    <br>マイページ
+                                <a href="/index" class="push_sub_icon"><img src="{{ asset('image/ホーム画面アイコン.png') }}"
+                                    alt="">
+                                    <br>ホーム画面へ
                                 </a>
                             </li>
                         </ul>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class RefereceController extends Controller
 {
@@ -28,10 +29,11 @@ class RefereceController extends Controller
     //     return view('posts.index', ['list'=>$list]);
     // }
 
+
     //新規投稿作成画面へ移動
     public function createForm()
     {
-        return view('posts.createForm');
+        return view('createForm');
     }
 
     //新規投稿作成後、データを渡してホーム画面へ移動
