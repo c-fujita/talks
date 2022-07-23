@@ -41,4 +41,9 @@ class Customer extends Authenticatable  // ←←←← 注目
     {
         return $this->hasMany('App\Reference');
     }
+
+    public function Reply()
+    {
+        return $this->hasMany('App\Reply');
+    }
 }

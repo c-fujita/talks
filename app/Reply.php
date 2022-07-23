@@ -12,4 +12,14 @@ class reply extends Model
     ];
 
     protected $table = 'Replies';
+
+    public function customer()
+    {
+        return $this->belongsTo('App\Customer');
+    }
+
+    public function Reference()
+    {
+        return $this->belongsTo('App\Reference');
+    }
 }

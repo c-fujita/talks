@@ -213,7 +213,7 @@
                             <li class="emerge_cap" data-tippy-content="">
                                 <a href={{ route( 'index' )}} class="push_sub_icon"><img src="{{ asset('image/ホーム画面アイコン.png') }}"
                                     alt="">
-                                    <br>ホーム画面へ
+                                    <br>ホーム画面
                                 </a>
                             </li>
                         </ul>
@@ -265,7 +265,7 @@
                     <a href="">カリキュラム一覧</a>
                 </li>
                 <li>
-                    <a href="">マイページ</a>
+                    <a href="">ホーム画面</a>
                 </li>
                 <li>
                     <a href="">お問い合わせ</a>

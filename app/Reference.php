@@ -17,4 +17,9 @@ class reference extends Model
     {
         return $this->belongsTo('App\Customer');
     }
+
+    public function Reply()
+    {
+        return $this->hasMany('App\Reply');
+    }
 }
