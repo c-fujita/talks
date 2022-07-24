@@ -160,6 +160,8 @@
                     {{-- 投稿内容　１つ目 --}}
                     <div class="content-area">
                         <a href="">
+                            {{-- @foreach($lists as $list) --}}
+                            {{-- @can('view', $reference) --}}
                             <div class="title-nameBox">
                                 <h3 class="title">ここにタイトルが入ります。</h3>
                                 <div class="name-area">
@@ -193,6 +195,8 @@
                                     </div>
                                 </div>
                             </div>
+                            {{-- @endcan --}}
+                            {{-- @endforeach --}}
                         </a>
                     </div>
                     {{-- ↑ここまで↑ --}}

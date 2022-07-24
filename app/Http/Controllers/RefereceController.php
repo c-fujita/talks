@@ -91,57 +91,70 @@ class RefereceController extends Controller
     public function create(Request $request)
     {
         $request->validate([
-            'userName' => 'required|max:100',
-            'newPost' => 'required|max:100',
+            'userName' => 'required|max:1000',
+            'newTitle' => 'required|max:100',
+            'textBody' => 'required|max:1000',
+            'textTag' => 'required|max:100',
         ]);
 
         $user_name = $request->input('userName');
-        $contents = $request->input('newPost');
+        $title = $request->input('newTitle');
+        $body = $request->input('textBody');
+        $tag = $request->input('textTag');
 
-        DB::table('posts')->insert([
+        $customer_id = Auth::id();
+
+        DB::table('references')->insert([
             'user_name' => $user_name,
-            'contents' => $contents
+            'customer_id' => $customer_id,
+            'title' => $title,
+            'body' => $body,
+            'tag' => $tag,
         ]);
 
 
-        return redirect('/index');
+        return redirect('index');
     }
 
     //投稿編集画面へ移動
     public function editForm($id)
     {
-        $post = DB::table('posts')
+        $reference = DB::table('references')
         ->where('id', $id)
         ->first();
-        return view('posts.editForm', ['post' => $post]);
+        return view('editForm', ['reference' => $reference]);
     }
 
     //投稿編集後、ホーム画面へ
     public function edit(Request $request)
     {
         $request->validate([
-            'upUserName' => 'required|max:100',
-            'upPost' => 'required|max:100',
+            'editUserName' => 'required|max:1000',
+            'editTitle' => 'required|max:100',
+            'editBody' => 'required|max:1000',
+            'editTag' => 'required|max:100',
         ]);
 
         $id = $request->input('id');
-        $up_name = $request->input('upUserName');
-        $up_post = $request->input('upPost');
+        $edit_name = $request->input('editUserName');
+        $edit_title = $request->input('editTitle');
+        $edit_body = $request->input('editBody');
+        $edit_tag = $request->input('editTag');
 
-        DB::table('posts')
+        DB::table('references')
         ->where('id', $id)
-        ->update(['user_name' => $up_name, 'contents' => $up_post]);
+        ->edit(['user_name' => $edit_name, 'title' => $edit_title, 'body' => $edit_body, 'tag' => $edit_tag]);
 
-        return redirect('/index');
+        return redirect('index');
     }
 
     //投稿削除
     public function delete($id)
     {
-        DB::table('posts')
+        DB::table('references')
         ->where('id', $id)
         ->delete();
 
-        return redirect('/index');
+        return redirect('index');
     }
 }
