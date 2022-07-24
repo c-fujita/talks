@@ -16,7 +16,7 @@ class RefereceController extends Controller
         $this->middleware('auth');
     }
 
-    //投稿の表示
+    //投稿の表示　　**ifを分けても表示できるか確認**
     // public function index(Request $request)
     // {
     //     $search = $request->input('search');
