@@ -20,12 +20,12 @@ Route::get('/', function () {
 Auth::routes();
 
 // ホーム画面へ
-Route::get('/', 'HomeController@index')->name('index');
+Route::get('/', 'ReferenceController@index')->name('index');
 
 Route::post('index', 'ReferenceController@index');
 
 // マイページへ
-Route::get('/myPage', 'HomeController@myPage')->name('myPage');
+Route::get('/myPage', 'ReferenceController@myPage')->name('myPage');
 
 // 投稿作成画面へ
 Route::get('/create-form', 'ReferenceController@createForm');

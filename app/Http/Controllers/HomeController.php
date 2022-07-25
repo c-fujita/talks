@@ -21,14 +21,14 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
-    {
-        return view('index');
-    }
+    // public function index()
+    // {
+    //     return view('index');
+    // }
 
-    // マイページへ
-    public function myPage()
-    {
-        return view('myPage');
-    }
+    // // マイページへ
+    // public function myPage()
+    // {
+    //     return view('myPage');
+    // }
 }

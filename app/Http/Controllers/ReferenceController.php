@@ -8,12 +8,23 @@ use app\Customer;
 use app\Reference;
 use Illuminate\Support\Facades\Auth;
 
-class RefereceController extends Controller
+class ReferenceController extends Controller
 {
     //
     public function __construct()
     {
         $this->middleware('auth');
+    }
+
+    public function index()
+    {
+        return view('index');
+    }
+
+    // マイページへ
+    public function myPage()
+    {
+        return view('myPage');
     }
 
     //投稿の表示　　**ifを分けても表示できるか確認**
@@ -79,6 +90,7 @@ class RefereceController extends Controller
 
     //     return view('index', ['lists'=>$lists]);
     // }
+
 
 
     //新規投稿作成画面へ移動
