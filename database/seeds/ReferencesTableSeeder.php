@@ -12,7 +12,10 @@ class ReferencesTableSeeder extends Seeder
     public function run()
     {
         //
-        factory(App\Reference::class, 8)
+        // factory(App\Reference::class, 8)
+        //     ->create();
+
+        factory(Reference::class, 8)
             ->create();
     }
 }

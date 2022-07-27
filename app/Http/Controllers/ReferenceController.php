@@ -18,13 +18,13 @@ class ReferenceController extends Controller
 
     public function index()
     {
-        return view('index');
+        return view('talks.index');
     }
 
     // マイページへ
     public function myPage()
     {
-        return view('myPage');
+        return view('talks.myPage');
     }
 
     //投稿の表示　　**ifを分けても表示できるか確認**
@@ -96,7 +96,7 @@ class ReferenceController extends Controller
     //新規投稿作成画面へ移動
     public function createForm()
     {
-        return view('createForm');
+        return view('talks.createForm');
     }
 
     //新規投稿作成後、データを渡してホーム画面へ移動
